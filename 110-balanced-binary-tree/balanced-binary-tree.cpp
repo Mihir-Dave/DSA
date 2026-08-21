@@ -18,7 +18,7 @@ public:
         int rh = height(root->right);
 
         if(abs(lh-rh) > 1) return false;
-
+        //return true;
         return isBalanced(root->left) && isBalanced(root->right);
     }
     int height(TreeNode* root){
